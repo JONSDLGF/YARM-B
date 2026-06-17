@@ -1,0 +1,80 @@
+{
+    "casual_url": "https://google.com",
+    "casualurl": "https://jonsdlgf.github.io/",
+    "default_style": "dark",
+    "save_history": true,
+    "button_list": [1, 0, 2],
+    "styles": {
+        "pastel": {
+            "barra_bg": [255, 240, 245],
+            "barra_hover_bg": [255, 230, 240],
+            "barra_border_color": [180, 150, 200],
+
+            "input_bg": [255, 250, 250],
+            "input_hover_bg": [245, 235, 240],
+            "input_color": [80, 60, 90],
+            "input_border_color": [200, 180, 210],
+
+            "button_bg": [230, 210, 250],
+            "button_hover_bg": [210, 190, 240],
+            "button_color": [60, 40, 100],
+            "button_border_color": [160, 140, 200],
+
+            "close_button_bg": [250, 200, 200],
+            "close_button_hover_bg": [255, 170, 170],
+            "close_button_color": [80, 0, 0],
+            "close_button_border_color": [180, 100, 100],
+
+            "screen_bg": [255, 250, 250],
+            "font_size": 22
+        },
+
+        "dark": {
+            "barra_bg": [40, 40, 40],
+            "barra_hover_bg": [60, 60, 60],
+            "barra_border_color": [100, 100, 100],
+
+            "input_bg": [30, 30, 30],
+            "input_hover_bg": [50, 50, 50],
+            "input_color": [220, 220, 220],
+            "input_border_color": [90, 90, 90],
+
+            "button_bg": [70, 70, 70],
+            "button_hover_bg": [100, 100, 100],
+            "button_color": [240, 240, 240],
+            "button_border_color": [150, 150, 150],
+
+            "close_button_bg": [180, 50, 50],
+            "close_button_hover_bg": [220, 70, 70],
+            "close_button_color": [255, 255, 255],
+            "close_button_border_color": [120, 30, 30],
+
+            "screen_bg": [20, 20, 20],
+            "font_size": 24
+        },
+
+        "white": {
+            "barra_bg": [250, 250, 250],
+            "barra_hover_bg": [230, 230, 230],
+            "barra_border_color": [180, 180, 180],
+
+            "input_bg": [255, 255, 255],
+            "input_hover_bg": [245, 245, 245],
+            "input_color": [0, 0, 0],
+            "input_border_color": [200, 200, 200],
+
+            "button_bg": [240, 240, 240],
+            "button_hover_bg": [220, 220, 220],
+            "button_color": [20, 20, 20],
+            "button_border_color": [150, 150, 150],
+
+            "close_button_bg": [230, 60, 60],
+            "close_button_hover_bg": [250, 100, 100],
+            "close_button_color": [255, 255, 255],
+            "close_button_border_color": [200, 50, 50],
+
+            "screen_bg": [255, 255, 255],
+            "font_size": 24
+        }
+    }
+}

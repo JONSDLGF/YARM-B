@@ -1,0 +1,39 @@
+# DNS fallback para uso cotidiano
+localhost 127.0.0.1
+
+# Google
+google.com 142.250.190.14
+www.google.com 142.250.190.14
+
+# YouTube
+youtube.com 142.250.190.206
+www.youtube.com 142.250.190.206
+
+# Gmail
+mail.google.com 142.250.190.37
+
+# GitHub
+github.com 140.82.114.3
+github.io 185.199.108.153 185.199.109.153 185.199.110.153 185.199.111.153
+
+# Discord
+discord.com 162.159.138.232 162.159.138.233
+cdn.discordapp.com 162.159.129.233
+
+# WhatsApp
+web.whatsapp.com 157.240.229.60
+
+# Facebook
+facebook.com 157.240.229.35
+www.facebook.com 157.240.229.35
+
+# Twitter / X
+twitter.com 104.244.42.1
+x.com 104.244.42.129
+
+# Reddit
+reddit.com 151.101.65.140 151.101.1.140 151.101.129.140 151.101.193.140
+
+# Wikipedia
+wikipedia.org 208.80.154.224
+en.wikipedia.org 208.80.154.224
