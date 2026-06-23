@@ -1,1 +1,1 @@
-see the file [Rule](https://github.com/JONSDLGF/YARM-B/Rule)
+see the file [Rule](/Rule)
