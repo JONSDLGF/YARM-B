@@ -1,3 +1,4 @@
-1. main.py -remove for YARM-B
-2. non dependecis
+roadmap:
+1. make a bootstrap
+2. refact the code
 3. pass pygame to sdl2

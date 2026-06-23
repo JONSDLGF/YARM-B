@@ -1,11 +1,10 @@
-# /assets/classes/guitools.py
-# by JM
-# date 07/10/2025
-
+# libpip
 import pygame
 import threading
-import requests
 from urllib.parse import urljoin
+
+# libpy
+import requests
 from io import BytesIO
 
 pygame.font.init()
@@ -156,7 +155,6 @@ class Container(Element):
                 self.rect.height + sum(c.rect.height + self.pady for c in self.children)
             )
             scrollbar_y = self.rect.y + self.sidebar_scroll
-            #print(scrollbar_height,scrollbar_y)
             scrollbar_rect = pygame.Rect(
                 0,  # 10px ancho de scrollbar desde el borde derecho
                 scrollbar_y,
@@ -461,7 +459,6 @@ class Image(Element):
         if self.loaded:
             self.surface.blit(self.loaded_surface, (0, 0))
         # Dibujar la surface de este elemento sobre el surface de la ventana
-        print((self.rect.x, self.rect.y + offset_y))
         target_surface.blit(self.surface, (self.rect.x, self.rect.y + offset_y))
 
 # =========================

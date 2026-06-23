@@ -1,46 +1,35 @@
-# /main.py
-# by JM
-# date 06/10/2025
-
+# libpip
 import pygame
+
+# libpy
 import sys
-import json
 import os
+import json
 import sqlite3
 
-# -----------------------------
-# Imports y setup
-# -----------------------------
+# lib
+import lib.guitools as guitools
+import lib.html as dec_html
 
-# ruta absoluta del directorio donde está este script
-ROOT = os.path.dirname(os.path.abspath(__file__))
+class MAIN:
+    ROOT = os.path.dirname(os.path.abspath(__file__))
+    W, H = (900, 650)
+    NAME = "YARM-B"
+    VER = "26.0 BY JM"
+    config = None
+    data = None
+    cache = None
 
-# construimos rutas seguras relativas al script principal
-sys.path.extend([
-    os.path.join(ROOT, "assets"),
-    os.path.join(ROOT, "assets", "classes"),
-    os.path.join(ROOT, "assets", "classes", "dec")
-])
-
-import assets.classes.guitools as guitools
-import assets.classes.dec.html as dec_html
-
+# init gui
 pygame.init()
-
-# -----------------------------
-# Configuración inicial
-# -----------------------------
-screen_width, screen_height = 900, 650
-name, ver = "Tynic Browser", "v2.0.0 BU 6 by JM"
-pygame.display.set_caption(f"{name} {ver}")
-screen = pygame.display.set_mode((screen_width, screen_height))
+pygame.display.set_caption(f"{MAIN.NAME} {MAIN.VER}")
+screen = pygame.display.set_mode((MAIN.W, MAIN.H))
 clock = pygame.time.Clock()
 
+# init history
 history = []
-FILE_HIST_DB = "hist.db"
 history_index = -1  # posición actual en el historial
-ROOT = os.path.dirname(os.path.abspath(__file__))
-path = os.path.join(ROOT, "assets", FILE_HIST_DB)
+path = os.path.join(MAIN.data, "hist.db")
 path = os.path.normpath(path)
 HIST_DB = path
 
@@ -103,12 +92,12 @@ font_size = style["font_size"]
 # -----------------------------
 barr_task_height = 50
 barr_task = guitools.Container(
-    x=0, y=0, width=screen_width, height=barr_task_height,
+    x=0, y=0, width=MAIN.W, height=barr_task_height,
     bg=style["barra_bg"], padx=5, pady=5, display="inline", gap=5
 )
 
 barr = guitools.Container(
-    x=0, y=screen_height-barr_height, width=screen_width, height=barr_height,
+    x=0, y=MAIN.H-barr_height, width=MAIN.W, height=barr_height,
     bg=style["barra_bg"], padx=5, pady=5, display="inline", gap=5
 )
 
@@ -285,7 +274,7 @@ def add_window(url: str):
     global active_window
     screen_elem = guitools.Container(
         x=0, y=barr_task_height,
-        width=screen_width, height=screen_height-barr_height-barr_task_height,
+        width=MAIN.W, height=MAIN.H-barr_height-barr_task_height,
         bg=style["screen_bg"], sidebar = True
     )
     windows.append({

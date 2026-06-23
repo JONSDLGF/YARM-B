@@ -1,7 +1,3 @@
-# /assets/dec/css.py
-# by JM
-# date 02/10/2025
-
 def parser_css(css_text):
     css_dict = {}
     lines = css_text.split("}")

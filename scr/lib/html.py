@@ -1,15 +1,13 @@
-# /assets/classes/dec/html.py
-# by JM
-# date 07/10/2025
-
-import requests
-import threading
-import dnstools
-import pygame
+# libpip
 from bs4 import BeautifulSoup, NavigableString, Tag
-from io import BytesIO
 from urllib.parse import parse_qs, urljoin, urlparse, urlunparse
-import assets.classes.guitools as guitools
+
+# libpy
+import requests
+
+# libs
+import dnstools
+import guitools
 from css import parser_css
 
 # -----------------------------
@@ -22,7 +20,7 @@ base_host     = ""
 base_query    = ""
 base_fragment = ""
 head          = {
-    "User-Agent": "TynicBrowser/2.0 (engine=webpy)"
+    "User-Agent": "YARM-B/26.0 (engine=TynicBP)"
 }
 current_windows = None
 
@@ -95,7 +93,6 @@ def procesar_elemento(elem, parent):
 
     # Contenedores
     if tag in ["document","div","header","section","main","body","p","span"]:
-        print(elem["attrs"])
         bg=hex_to_rgb(elem["attrs"].get("bgcolor","#FFF"))
 
         # Crear container con padding inicial
@@ -206,7 +203,6 @@ def procesar_elemento(elem, parent):
 
     # style
     if tag == "style":
-        print(elem)
         css_tags.update(
             parser_css()
         )

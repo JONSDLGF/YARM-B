@@ -1,10 +1,9 @@
-# /classes/dnstools.py
-# by JM
-# date 30/09/2025
-
+# libpip
 import urllib.parse
-import socket
+
+# libpy
 import os
+import socket
 import requests
 
 DNS_PUBLIC = [

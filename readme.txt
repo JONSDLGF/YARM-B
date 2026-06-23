@@ -1,6 +1,6 @@
-v26.0.0 JM - 17/06/2026
+v26.0.0 - 17/06/2026
 
-engine:  webpy
+engine:  TynicBP
 name:    YARM-B
 version: 26.0
 

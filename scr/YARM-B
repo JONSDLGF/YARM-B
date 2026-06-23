@@ -1,0 +1,20 @@
+#!/bin/python3
+# bootstrap
+
+import sys
+import subprocess
+from pathlib import Path
+
+PATH = Path(__file__).parent.resolve()
+
+if len(sys.argv) > 1:
+    sys.exit(0)
+
+subprocess.Popen([
+    sys.executable,
+    str(PATH / "main.py"),
+    "--config", str(PATH / ".config"),
+    "--data", str(PATH / ".data")
+])
+
+sys.exit(0)
